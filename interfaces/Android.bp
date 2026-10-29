@@ -2,3 +2,22 @@ hidl_package_root {
     name: "vendor.samsung.hardware",
     use_current: true,
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_vendor_samsung_hardware_security_interfaces",
+    interfaces: [
+        "vendor.samsung.hardware.security.drk@2.0::ISehDrk",
+        "vendor.samsung.hardware.security.widevine.keyprov@1.0::ISehWidevineKeyProvisioning",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_vendor_samsung_hardware_tlc_interfaces",
+    interfaces: [
+        "vendor.samsung.hardware.tlc.hdm@1.0::ISehHdm",
+        "vendor.samsung.hardware.tlc.hdm@1.1::ISehHdm",
+        "vendor.samsung.hardware.tlc.hdm@1.2::ISehHdm",
+        "vendor.samsung.hardware.tlc.mpos_tui@1.0::ISehMposTui",
+        "vendor.samsung.hardware.tlc.payment@1.0::ISehTlcPayment",
+    ],
+}

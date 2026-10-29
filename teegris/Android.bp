@@ -27,5 +27,6 @@ cc_library_headers {
 
 cc_library_shared {
     name: "libteecl",
+    installable: false,
     vendor: true,
 }
